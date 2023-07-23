@@ -18,6 +18,13 @@ const userSchema = new Schema(
     phoneNumber: {
       type: String,
     },
+    otp: {
+      type: Number,
+    },
+    isVerified: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
