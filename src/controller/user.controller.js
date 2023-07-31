@@ -91,9 +91,6 @@ async function sendVerification(req, res) {
       message: "email sent successfully",
     });
   } catch (error) {
-    if (error.code && error.code === 11000) {
-      return res.status(400).json({ message: "user already exist" });
-    }
     res.status(400).json({ message: error.message });
   }
 }

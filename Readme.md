@@ -32,3 +32,15 @@ Routes>Controller>Model --> Public API
 ### 1. Register.
 
 user input registration details (name,email,password and phoneNumber), we validate details before sending to database
+
+Folder {
+name, files:File[],
+user
+}
+
+File {
+url,
+public_id,
+type
+user
+}
